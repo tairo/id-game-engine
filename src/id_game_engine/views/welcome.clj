@@ -1,9 +1,8 @@
 (ns id-game-engine.views.welcome
-  (:require [id-game-engine.views.common :as common]
-            [noir.content.getting-started])
+  (:require [id-game-engine.views.common :as common])
   (:use [noir.core :only [defpage]]
         [hiccup.core :only [html]]))
 
 (defpage "/welcome" []
-         (common/layout
-           [:p "Welcome to id-game-engine"]))
+         (common/welcome-layout
+           [:p "Instruction Designer NEO/Clojure"]))
