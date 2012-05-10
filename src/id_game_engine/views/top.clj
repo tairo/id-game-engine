@@ -7,13 +7,13 @@
 (defpage "/" []
          (common/layout 
            (common/id-title-banner "alpha 1.0")
-           (form-to [:post "/login"]
+           (form-to [:post "/create"]
                     [:center
                      [:table
                       [:tr
                        [:td "Login"]
-                       [:td (text-field "UserId")]]
+                       [:td (text-field "username")]]
                       [:tr
                        [:td "Password"]
-                       [:td (password-field "Password")]]]
+                       [:td (password-field "password")]]]
                      (submit-button "Login")])))

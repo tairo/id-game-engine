@@ -35,9 +35,7 @@
 ;; Operation
 
 (defn- store! [{username :username :as user}]
-  (mongodb/update! :users user (mongodb/merge user {:username username})))
-
-(update! :robots my-robot (merge my-robot { :name "asimo" }))
+  (mongodb/update! :users user (merge user {:username username})))
 
 (defn login! [{:keys [username password] :as user}]
   (let [{stored-pass :password} (get-username username)]

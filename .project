@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
   <name>id-game-engine</name>
-  <comment>FIXME: write this!</comment>
+  <comment>Instruction Designer NEO/Clojure - Game Engine</comment>
   <projects/>
   <buildSpec>
     <buildCommand>
